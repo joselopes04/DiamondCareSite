@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    box-sizing: border-box;
+}
+
+/* NAV MENU */
+/* Cor Navmenu */
+.menu-bar{
+    background-image: linear-gradient(to bottom ,  #85def8   , #b59bff);
+    border-bottom: 1px solid #00008b;
+}
+
+.navbar-nav{
+    margin-right: 20px;
+}
+
+/* Texto Navmenu */
+.nav-link{
+    margin: 3px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #8c55a2 !important;
+}
+
+.nav-link:hover{
+    color: #fff !important;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+}
+
+.nav-item{
+    margin-right: 27px;
+}
+
+/* Menu para Smartphone ou tablet */
+.dropdown-menu{
+    background-image: linear-gradient(to bottom ,  #85def8   , #b59bff);
+}
+/* Se o ecrã for menor que 990px o dropdown menu não têm Background */
+@media (max-width: 990px){
+    .dropdown-menu{
+        border: none;
+        background-image: transparent !important;
+    }
+}
+
+.dropdown-item{
+    cursor: pointer;
+    color: #8c55a2 !important;
+}
+
+.dropdown-item:hover{
+    background: transparent !important;
+    color: #fff !important;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+}
+/* BACKGROUND */
+body{
+    background-image: linear-gradient(to top ,  #85def8   , #b59bff);
+}
+
+/* CARROSSEL  */
+/* Titulo */
+/* NOTA: Todas as que tiverem ".main-carousel >" é pra diferenciar o carrousel da pag principal do dos produtos */
+
+/* CARROSSEL  */
+/* Titulo */
+.carousel-caption {
+    text-align: justify;
+    letter-spacing: 2px;
+    text-shadow: 0 0 3px black,0 0 3px black;
+}
+
+.carousel-caption h1{
+    color:#8c55a2;
+    font-size: 5vw;
+}
+
+.carousel-caption p{
+    color:#b59bff;
+    font-size: 2vw;
+}
+
+.carousel-item{
+    height: 83vh;
+}
+
+/* Mobile */
+@media(min-width:250px){
+    .carousel-caption{
+        margin-bottom: 55vh;
+    }
+}
+@media (min-width:250px)   and (orientation:landscape){
+    .carousel-caption{
+        margin-bottom: 20vh;
+    }
+}
+/* Tablet */
+@media(min-width:600px) and (min-height:650px){
+    .carousel-caption{
+        margin-bottom: 27vw;
+    }
+}
+
+@media(min-width:600px) and (orientation:portrait) {
+    .carousel-caption{
+        margin-bottom: 55vh;
+    }
+}
+
+/* Monitor */
+@media(min-width: 1025px){
+    .carousel-caption{
+        margin-bottom: 30vh;
+    }
+}
+
+
+/* Controlos Carrossel */
+.carousel-control-prev,.carousel-control-next{
+    width: 40px;
+    height: 40px;
+    background-color:#b59bff !important;
+    border-radius: 50%;
+    top: 50%;
+}
+
+.carousel-control-prev{
+    left: 5%;
+}
+
+.carousel-control-next{
+    right: 5%;
+}
+
+/* Mobile */
+@media(max-width:550px) and (orientation:portrait){
+    .carousel-control-prev,.carousel-control-next{
+        width: 20px;
+        height: 20px;
+        top: 16%;
+    }
+}
+
+/* Para Mobile qnd estão na horizontal  */
+@media (max-width:900px) and (max-height:500px)  and (orientation:landscape){
+    .carousel-control-prev,.carousel-control-next{
+        width: 20px;
+        height: 20px;
+        top: 50%;
+    }
+}
+
+/* Tablet */
+@media(min-width:550px) and (orientation:portrait) {
+    .carousel-control-prev,.carousel-control-next{
+        top: 30%;
+    }
+}
+
+/* Indicadores do Carrossel */
+.carousel-indicators .active{
+   background-color:#85def8;
+}
+
+/* Mobile */
+@media(max-width:550px) and (orientation:portrait){
+    .carousel-indicators{
+        display: none;
+    }
+}
+/* Tablet */
+@media(min-width:550px) and (orientation:portrait){
+    .carousel-indicators{
+        top: 55%;
+    }
+}
+
+/* BUTÕES */
+.btn1, .btn2, .btn-feedback, .btn-login{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #8c55a2;
+    background-image: linear-gradient(to bottom ,  #85def8   , #b59bff);
+    border-radius: 15px;
+}
+
+.btn1, .btn2, .btn-feedback{
+    padding: 6px 18px;
+}
+
+.btn-login{
+    padding: 6px 40px;
+}
+
+.btn1:hover, .btn2:hover, .btn-feedback:hover, .btn-login:hover {
+    color: #fff
+}
+
+.btn1, .btn2{
+    margin-right: 10vw;
+}
+
+/* Mobile */
+@media(max-width:700px){
+    .btn1, .btn2{
+        padding: 2px 6px;
+        font-size: 8px;
+
+    }
+}
+
+/* Tablet */
+@media(min-width:700px) and (max-width:1024px){
+    .btn1, .btn2{
+        padding: 5px 15px;
+        font-size: 11px;
+    }
+}
+
+/* CARDS */
+.titulo-servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8vh 0vh 3vh 0vh;
+    color:#8c55a2;
+    font-size: 3.5vw;
+    text-shadow: 0 0 3px #fff,0 0 3px #fff;
+}
+
+.card-title{
+    color:#8c55a2;
+}
+
+.card-link:hover{
+    color:#8c55a2;
+    text-decoration: underline;
+}
+
+.row{
+    margin: 0px !important;
+}
+
+
+/* FORMS */
+.modal-content{
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+}
+
+.modal-header{
+    justify-content: center;
+}
+
+.modal-title{
+    margin-left: auto;
+    color: #fff;
+}
+
+/* Butão para fechar o form */
+
+.btn-close{
+    background: none;
+    border: none;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 20px;
+    opacity: 0.5;
+    color: #FF0000;
+}
+
+.btn-close:hover{
+  opacity: 1;
+}
+
+.form-end{
+    display: flex;
+    justify-content: center;
+} 
+
+/* Inputs */
+.form-input , .text-area{
+    width: 100%;
+    color:#fff;
+    background: none;
+    border-top:0px ;
+    border-right:0px ;
+    border-left:0px ;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #8c55a2;
+}
+
+.form input:focus , .text-area:focus {
+    outline: none ;
+    background: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.form-input::placeholder , .text-area::placeholder{
+    color: #fff;
+    opacity: 0.85;
+}
+
+.text-area{
+    resize: none;
+}
+
+.radio{
+    color: #fff;
+	cursor: pointer;
+	font-weight: 500;
+	position: relative;
+}
+
+/* LINKS */
+.link{
+    font-size: 14px;
+    color:#007bff !important;
+}
+
+.link:hover{
+    color:#8c55a2 !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.form-lbl{
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+/* FOOTER */
+#footer{
+    background-image: linear-gradient(to bottom ,  #85def8   , #b59bff);
+    border-top: 1px solid #8c55a2;
+}
+
+#footer .container{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#footer .container p{
+    margin-bottom: 0px;
+}
+
+.title-footer{
+    color: #8c55a2;
+}
+
+.footer-p, .footer-p2{
+    font-size: 15px;
+}
+
+.footer-p2{
+    text-align: right;
+}
+
+.btn-floating{
+    font-size: 30px;
+}
+
+.fa-youtube{
+    color: #FF0000;
+}
+
+.fa-facebook{
+    color:#4267B2;
+}
+
+.fa-instagram{
+    padding: 2.5px;
+    color: #fff;
+    border-radius: 30%;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.btn-floating:hover{
+    background-color: #fff;
+    border-radius: 25%;
+}
+
+.fa-mars{
+    color: #6ca0dc;
+}
+
+.fa-venus{
+    color: #DC143C;
+}
+
+/* PÁGINA SOBRE NÓS */
+.titulo-about , .subtitulo{
+    margin: 5vh 0 5vh 0;
+    color: #8c55a2;
+    text-shadow: 0 0 3px #000,0 0 3px #000;
+    text-align: center;
+}
+.titulo-about{
+    font-size: 4vw;
+}
+
+.about-slogan{
+    font-weight:600;
+    color:#b59bff;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    text-shadow: 0 0 3px black,0 0 3px black;
+}
+
+#about-list{
+    list-style: none;
+    padding-left: 15px;
+}
+
+#about-list li{
+    line-height: 30px;
+}
+
+#about-list i{
+    color:#008000 ;
+}
+
+/* INFORMAÇÕES */
+.titulo-info, .titulo-mapa{
+    font-size: 3.5vw;
+}
+.service-box{
+   text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-box h4{
+    color:#b59bff;
+    text-shadow: 0 0 3px black,0 0 3px black;   
+}
+
+.service-box i{
+    font-size: 30px;
+}
+.icon i{
+    color: #285AEB;
+    font-size: 20px;
+}
+
+.mapa{
+    text-align: center !important;
+}

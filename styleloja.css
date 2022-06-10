@@ -1,0 +1,41 @@
+/* CARROSSEL  */
+.carousel-caption {
+    text-align: left !important;
+    letter-spacing: 2px;
+    text-shadow: 0 0 3px black,0 0 3px black;
+}
+
+.carousel-caption h1{
+    color:#8c55a2;
+    font-size: 4vw !important;
+}
+
+.carousel-caption p{
+    color:#b59bff;
+    font-size: 1.5vw !important;
+}
+
+/* Our Brands */
+.brands-container > img {
+    width: 150px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+  }
+  .our-brands-section {
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+  .brands-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 2rem;
+  }
