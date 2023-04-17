@@ -1,4 +1,6 @@
 # DiamondCareSite
+
+<p align="center"><img width=10% src=https://github.com/joselopes04/Diamond.CareApp/blob/master/Assets/Icon.png></p>
 Website layout for an "unfinished" beauty salon and I have no intention of finishing XD.
 
 Made mostly in HTML and CSS, with a line or two of PHP and JS.
